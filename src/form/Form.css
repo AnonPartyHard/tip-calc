@@ -1,0 +1,22 @@
+.form{
+    padding: 10px;
+}
+
+
+.form label{
+    font-weight: bold;
+    color: hsl(186, 14%, 43%);
+}
+
+.form .buttons-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form .buttons-group-item{
+    flex: 3 0 25%;
+    padding: 5px;
+    height: 50px;
+}

@@ -1,0 +1,22 @@
+.calc{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+}
+
+.calc-form{
+    flex: 1;
+}
+
+.calc-result{
+    flex: 1;
+    border-radius: 15px;
+    background-color:hsl(183, 100%, 15%);
+}
+
+@media only screen and (max-width: 460px) {
+    .calc{
+        flex-direction: column;
+    }
+}

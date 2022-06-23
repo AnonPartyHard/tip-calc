@@ -1,0 +1,42 @@
+.layout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.layout .header{
+    flex: 3 0 30%;
+    position: relative;
+}
+
+.layout .header span{
+    font-size: 24px;
+    color:hsl(183, 100%, 15%);
+    font-weight: 700;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.layout .body{
+    flex: 7 0 70%;
+}
+
+.layout .body .tip-calc{
+    width: 50%;
+    margin: auto;
+    transition: width .2s;
+}
+
+@media only screen and (max-width: 720px) {
+    .layout .body .tip-calc{
+        width: 100%;
+    }
+}
