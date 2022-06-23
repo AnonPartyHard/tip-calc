@@ -7,7 +7,7 @@ const InputNum = ({name, value, label, placeholder, defaultValue, min, Icon, onC
     const ref = useRef(null)
 
     const onChange = (e) => {
-        if(e.target.value !== ""){
+        if(e.target.value !== "" && e.target.value >= min){
             onChangeFunc(name, e.target.value)
         }
         setHighlight(e.target.value > min)
